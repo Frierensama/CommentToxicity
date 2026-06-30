@@ -11,7 +11,7 @@ from huggingface_hub import hf_hub_download
 
 st.set_page_config(page_title="Comment Toxicity Detection",page_icon="💬",layout="wide")
 
-model_path = hf_hub_download(repo_id="allabilitiessrank/biLSTM", filename="bilstm2.keras")
+model_path = hf_hub_download(repo_id="allabilitiessrank/biLSTM", filename="bilstm_mini.keras")
 model = load_model(model_path)
 
 with open("tokenizer.pkl", "rb") as f:
