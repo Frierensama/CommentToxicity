@@ -2,6 +2,11 @@
 
 A Streamlit web application that detects toxic comments using a **Bidirectional LSTM (BiLSTM)** model. The application performs real-time prediction, bulk CSV prediction, and provides dataset insights and model performance metrics.
 
+## Deployment
+```bash
+https://commenttoxicity.onrender.com
+ ```
+
 ## Features
 
 - Real-time toxicity prediction
