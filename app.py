@@ -25,7 +25,7 @@ menu = st.sidebar.radio(
     "Navigation",
     [
         "Home",
-        "Data Insights",
+        # "Data Insights",
         "Real-time Prediction",
         "Bulk Prediction"
     ]
@@ -52,19 +52,19 @@ if menu == "Home":
     d1.metric("Accuracy","0.98")
     d2.metric("Val Accuracy","0.97")
 
-elif menu == "Data Insights":
+# elif menu == "Data Insights":
 
-    st.title("Dataset Insights")
-    train = pd.read_csv("Data/train.csv")
+#     st.title("Dataset Insights")
+#     train = pd.read_csv("Data/train.csv")
 
-    st.write("Dataset Shape")
-    st.dataframe(pd.DataFrame({"Rows":[train.shape[0]],"Columns":[train.shape[1]]}))
+#     st.write("Dataset Shape")
+#     st.dataframe(pd.DataFrame({"Rows":[train.shape[0]],"Columns":[train.shape[1]]}))
 
-    labels = ["toxic", "severe_toxic","obscene", "threat", "insult","identity_hate"]
+#     labels = ["toxic", "severe_toxic","obscene", "threat", "insult","identity_hate"]
 
-    st.subheader("Label Distribution")
+#     st.subheader("Label Distribution")
 
-    st.bar_chart(train[labels].sum())
+#     st.bar_chart(train[labels].sum())
 
 elif menu == "Real-time Prediction":
 
