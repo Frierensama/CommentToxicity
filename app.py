@@ -7,12 +7,14 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 from helper_funcs import clean_txt, text_to_wordlist
-from huggingface_hub import hf_hub_download
+# from huggingface_hub import hf_hub_download
 
 st.set_page_config(page_title="Comment Toxicity Detection",page_icon="💬",layout="wide")
 
-model_path = hf_hub_download(repo_id="allabilitiessrank/biLSTM", filename="bilstm_mini.keras")
-model = load_model(model_path)
+# model_path = hf_hub_download(repo_id="allabilitiessrank/biLSTM", filename="bilstm_nano.keras")
+# model = load_model(model_path)
+
+model = load_model("bilstm_nano.keras")
 
 with open("tokenizer.pkl", "rb") as f:
     tokenizer = pickle.load(f)
