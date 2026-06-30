@@ -56,15 +56,7 @@ https://commenttoxicity.onrender.com
 ├── README.md
 ```
 
-## ▶Run Locally
-
-Clone the repository
-
-```bash
-git clone https://github.com/username/comment-toxicity-detection.git
-```
-
-Install dependencies
+# Install dependencies
 
 ```bash
 pip install -r requirements.txt
