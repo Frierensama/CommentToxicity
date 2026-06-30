@@ -7,7 +7,6 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 from helper_funcs import clean_txt, text_to_wordlist
-
 from huggingface_hub import hf_hub_download
 
 st.set_page_config(page_title="Comment Toxicity Detection",page_icon="💬",layout="wide")
